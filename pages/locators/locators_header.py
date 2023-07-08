@@ -11,7 +11,7 @@ btn_sauce = (By.XPATH, '//div[@class="sticky-component"]//a[@href="/sauce"]')
 display_page_sauce = (By.XPATH, '//h1[@class="page-title__title" and text()="Sauce"]')
 
 btn_drinks = (By.XPATH, '//a[@href="/drinks"]')
-display_page_drinks = (By.XPATH, '//h1[text()="Drinks"]')
+display_page_drinks = (By.XPATH, '//div[@class="page-title__content-primary"]//h1[text()="Drinks"]')
 
 btn_desserts = (By.XPATH, '//a[@href="/starter"]')
 display_page_desserts = (By.XPATH, '//h1[text()="Desserts"]')
@@ -31,20 +31,19 @@ display_page_chicken = (By.XPATH, '//h1[text()="Chicken"]')
 btn_pizza = (By.XPATH, '//a[@href="/pizza"]')
 display_page_pizza = (By.XPATH, '//h1[text()="Pizza"]')
 
-"""block infirmation"""
-block_infirmation = (By.XPATH, '//div[@class="sticky-component"]'
+"""block information"""
+block_information = (By.XPATH, '//div[@class="sticky-component"]'
                      '//div[@class="composed-navigation__secondary"]')
 
-"""buttons in block infirmation"""
+"""buttons in block information"""
 btn_discount = (By.XPATH, '//div[@class="sticky-component"]//a[@href="/discount_campaign"]')
-display_page_discount = (By.XPATH, '//h1[text()="Discounts"]')
+display_page_discount = (By.XPATH, '//ul[@class="discounts-list__content"]')
 
 btn_news = (By.XPATH, '//div[@class="sticky-component"]//a[@href="/news"]')
 display_page_news = (By.XPATH, '//h1[text()="Новости"]')
 
-btn_work_in_dominis = (By.XPATH, '//div[@class="sticky-component"]//a[@href="/job"]')
-display_page_job = (By.XPATH, '//div[@class="job__banner-actions"]'
-                              '//span[@class="custom-button__content"]')
+btn_job = (By.XPATH, '//div[@class="sticky-component"]//a[@href="/job"]')
+display_page_job = (By.XPATH, '//div[@class="job__banner"]')
 
 btn_loyalty_program = (By.XPATH, '//div[@class="sticky-component"]//a[@href="/loyalty-program"]')
 display_page_loyalty_program = (By.XPATH, '//div[@class="layout-info"]')
