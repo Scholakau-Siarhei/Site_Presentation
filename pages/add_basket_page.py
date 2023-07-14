@@ -17,7 +17,10 @@ class Basket(BasePage):
 
     def close_banner(self):
         with allure.step("Close banner"):
-            self.find_element(locators_base_page.btn_close_banner).click()
+            if self.is_element_visible(locators_base_page.btn_close_banner):
+                self.find_element(locators_base_page.btn_close_banner).click()
+            else:
+                pass
             time.sleep(1)
 
     def add_hotdog_board_for_Munich_pizza(self):
@@ -46,12 +49,19 @@ class Basket(BasePage):
         """street"""
         with allure.step("Input street"):
             time.sleep(2)
-            self.is_element_visible(locators_add_basket.btn_search_street)
-            time.sleep(2)
+            self.driver.execute_script(
+            """var element = document.querySelector('.custom-field-text[data-test="custom-field-text"]');
+                if (element) {
+                  element.click();
+                } else {
+                  console.log('Элемент не найден');}
+            """
+            )
+            time.sleep(1)
             self.find_element(locators_add_basket.btn_search_field_street).send_keys("левкова")
-            time.sleep(2)
+            time.sleep(1)
             self.find_element(locators_add_basket.btn_change_street).click()
-            time.sleep(2)
+            time.sleep(1)
         """house"""
         with allure.step("Input house number"):
             self.find_element(locators_add_basket.btn_house_number).send_keys(random.randrange(10,20))
@@ -107,4 +117,4 @@ class Basket(BasePage):
     def assert_confirm_order(self):
         with allure.step("Checking confirm order"):
             assert self.is_element_visible(locators_add_basket.confirm_order)
-            time.sleep(2)
+            time.sleep(1)

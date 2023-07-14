@@ -1,6 +1,7 @@
 """Functions for Header page"""
 import time
 import allure
+
 from pages.base_page import BasePage
 from pages.locators import locators_base_page
 from pages.locators import locators_header
@@ -17,7 +18,10 @@ class Header(BasePage):
 
     def close_banner(self):
         with allure.step("Close banner"):
-            self.find_element(locators_base_page.btn_close_banner).click()
+            if self.find_element(locators_base_page.btn_close_banner):
+                self.find_element(locators_base_page.btn_close_banner).click()
+            else:
+                pass
             time.sleep(1)
 
     def change_language(self):
@@ -36,45 +40,44 @@ class Header(BasePage):
             locators_header.btn_bread,
             locators_header.btn_potato,
             locators_header.btn_chicken,
+            locators_header.btn_lunch,
             locators_header.btn_pizza
         ]
-        for name in buttons_in_block_menu:
+        check_display_page_menu = [
+            locators_header.display_page_sauce,
+            locators_header.display_page_drinks,
+            locators_header.display_page_desserts,
+            locators_header.display_page_salads,
+            locators_header.display_page_bread,
+            locators_header.display_page_potato,
+            locators_header.display_page_chicken,
+            locators_header.display_page_lunch,
+            locators_header.display_page_pizza
+        ]
+        for name, present in zip(buttons_in_block_menu, check_display_page_menu):
             with allure.step("Click on element in block menu"):
                 self.find_element(name).click()
-                time.sleep(2)
-            check_display_page_menu = [
-                locators_header.display_page_sauce,
-                locators_header.display_page_drinks,
-                locators_header.display_page_desserts,
-                locators_header.display_page_salads,
-                locators_header.display_page_bread,
-                locators_header.display_page_potato,
-                locators_header.display_page_chicken,
-                locators_header.display_page_pizza
-            ]
-            for page in check_display_page_menu:
-                with allure.step("Assert what page is displayed"):
-                    self.find_element(page)
-                    self.is_element_present(page)
+            with allure.step("Assert what page is displayed"):
+                assert self.find_element(present).is_displayed(), f"Page {present} is not displayed"
+                time.sleep(1)
 
-    def block_information(self):
+    def check_block_information(self):
         buttons_in_block_information = [
-            #locators_header.btn_discount,
-            #locators_header.btn_news,
-            #locators_header.btn_job,
+            locators_header.btn_discount,
+            locators_header.btn_news,
+            locators_header.btn_job,
             locators_header.btn_loyalty_program
         ]
-        for name in buttons_in_block_information:
-            with allure.step("Click on element in block menu"):
+        check_display_block_information = [
+            locators_header.display_page_discount,
+            locators_header.display_page_news,
+            locators_header.display_page_job,
+            locators_header.display_page_loyalty_program
+        ]
+        for name, present in zip(buttons_in_block_information, check_display_block_information):
+            with allure.step("Click on element in block information"):
                 self.find_element(name).click()
-                time.sleep(2)
-            check_display_block_information = [
-                #locators_header.display_page_discount,
-                #locators_header.display_page_news,
-                #locators_header.display_page_job,
-                locators_header.display_page_loyalty_program
-            ]
-            for page in check_display_block_information:
-                with allure.step("Assert what page is displayed"):
-                    self.find_element(page)
-                    self.is_element_present(page)
+            with allure.step("Assert what page is displayed"):
+                assert self.find_element(present).is_displayed(), f"Page {present} is not displayed"
+                time.sleep(1)
+                self.driver.back()

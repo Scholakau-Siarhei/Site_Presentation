@@ -54,4 +54,4 @@ btn_basket_change_cash = (By.XPATH, '//form[@action="get"]//option[@value="cash"
 btn_basket_submit = (By.XPATH, '//div[@class="checkout__group"]//button[@type="submit"]')
 """confirm order"""
 confirm_order = (By.XPATH, '//div[@class="custom-modal__content"]'
-                           '//div[contains(text(),"We have received you order")]')
+                           '//div[contains(text(),"Ваш номер заказа")]')

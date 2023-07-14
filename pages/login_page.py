@@ -19,7 +19,10 @@ class Login(BasePage):
 
     def close_banner(self):
         with allure.step("Close banner"):
-            self.find_element(locators_base_page.btn_close_banner).click()
+            if self.is_element_visible(locators_base_page.btn_close_banner):
+                self.find_element(locators_base_page.btn_close_banner).click()
+            else:
+                pass
 
     def change_language(self):
         with allure.step("Clik on language icon"):

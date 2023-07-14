@@ -18,7 +18,10 @@ class SingUp(BasePage):
 
     def close_banner(self):
         with allure.step("Close banner"):
-            self.find_element(locators_base_page.btn_close_banner).click()
+            if self.find_element(locators_base_page.btn_close_banner):
+                self.find_element(locators_base_page.btn_close_banner).click()
+            else:
+                pass
             time.sleep(1)
 
     def change_language(self):

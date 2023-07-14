@@ -1,2 +1,2 @@
 #!/bin/bash
-allure serve /Learn_QA/PYTHON/my_work/tests/reports/
+allure serve ../tests/reports/ ../tests/reports/ --clean
