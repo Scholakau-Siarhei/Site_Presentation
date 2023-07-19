@@ -3,6 +3,7 @@ import pytest
 import allure
 from pages.login_page import Login
 
+
 @pytest.mark.my_work
 @pytest.mark.non_multiple_CPUs_run
 @allure.suite("Authorisation")

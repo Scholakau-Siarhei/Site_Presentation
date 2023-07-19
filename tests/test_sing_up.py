@@ -3,6 +3,7 @@ import pytest
 import allure
 from pages.sing_up_page import SingUp
 
+
 @pytest.mark.my_work
 @pytest.mark.non_multiple_CPUs_run
 @allure.suite("Registration")

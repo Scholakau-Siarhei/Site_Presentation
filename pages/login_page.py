@@ -57,5 +57,5 @@ class Login(BasePage):
 
     def check_authorisation(self):
         with allure.step("Assert what profile form is open"):
-            self.is_element_present(locators_log_in.profile_form)
+            assert self.is_element_present(locators_log_in.profile_form)
             time.sleep(2)

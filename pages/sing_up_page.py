@@ -1,11 +1,10 @@
 """Functions for Sing Up page"""
 import time
 import allure
-from selenium.common import NoSuchElementException
-from selenium.webdriver.common.by import By
 from faker import Faker
 from pages.base_page import BasePage
 from pages.locators import locators_base_page, locators_log_in, locators_sing_up
+
 
 class SingUp(BasePage):
     def __init__(self, driver):
