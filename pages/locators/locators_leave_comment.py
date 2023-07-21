@@ -22,7 +22,7 @@ btn_change_category_feedback_site = (By.XPATH, '//option[@value="1"]')
 """photo"""
 #btn_add_photo = (By.XPATH, '//label[contains(@for, "custom-field-file-photo")]')
 btn_add_photo = (By.XPATH, '//input[@type="file"]')
-photo = ["X:\Learn_QA\PYTHON\my_work\images\img_add.jpg"]
+photo = ["X:\Learn_QA\PYTHON\my_work\static\images\img_add.jpg"]
 
 adding_photo = (By.XPATH, '//*[contains(text(),"img_add.jpg")]')
 

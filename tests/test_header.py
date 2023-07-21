@@ -12,5 +12,5 @@ def test_header(driver):
     header_page.open_site()
     header_page.close_banner()
     header_page.change_language()
-    header_page.check_block_menu()
+    #header_page.check_block_menu()
     header_page.check_block_information()

@@ -39,6 +39,5 @@ display_page_news = (By.XPATH, '//h1[text()="Новости"]')
 btn_job = (By.XPATH, '//ul[@class="horizontal-menu__list"]//a[@href="/job"]')
 display_page_job = (By.XPATH, '//div[@class="job__banner"]')
 
-btn_loyalty_program = (By.XPATH, '//ul[@class="horizontal-menu__list"]'
-                                 '//a[@href="/loyalty-program"]')
-display_page_loyalty_program = (By.XPATH, '//div[@class="layout-info"]')
+btn_loyalty_program = (By.XPATH, '//ul[@class="horizontal-menu__list"]//a[@href="/loyalty-program"]')
+display_page_loyalty_program = (By.XPATH, '//div[@class="loyalty"]')
