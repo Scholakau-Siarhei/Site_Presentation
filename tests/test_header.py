@@ -1,7 +1,9 @@
 """Checking what all elements of header clickable"""
+
 import pytest
 import allure
 from pages.header_page import Header
+
 
 @pytest.mark.my_work
 @pytest.mark.non_multiple_CPUs_run

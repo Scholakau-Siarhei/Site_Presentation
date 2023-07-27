@@ -1,2 +1,2 @@
 #!/bin/bash
-pytest -v -s ../tests/test_header.py --alluredir=../tests/reports
+pytest -v -s ./tests/test_header.py --alluredir=./tests/reports

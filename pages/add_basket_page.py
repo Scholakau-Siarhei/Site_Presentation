@@ -1,4 +1,5 @@
 """Functions for Basket page"""
+
 import random
 import time
 import allure
@@ -6,7 +7,9 @@ from faker import Faker
 from pages.base_page import BasePage
 from pages.locators import locators_base_page, locators_add_basket
 
+
 class Basket(BasePage):
+    """Methods for checking the addition of an item to the basket"""
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
@@ -46,7 +49,7 @@ class Basket(BasePage):
     def input_data_form_order_pizza(self):
         fake = Faker("ru_RU")
         """Input valid data in the form-order of pizza"""
-        """street"""
+        #street
         with allure.step("Input street"):
             time.sleep(2)
             self.driver.execute_script(
@@ -62,27 +65,27 @@ class Basket(BasePage):
             time.sleep(1)
             self.find_element(locators_add_basket.btn_change_street).click()
             time.sleep(1)
-        """house"""
+        #house
         with allure.step("Input house number"):
             self.find_element(locators_add_basket.btn_house_number).send_keys(random.randrange(10,20))
             time.sleep(1)
-        """apartment"""
+        #apartment
         with allure.step("Input apartment number"):
             self.find_element(locators_add_basket.btn_room_number).send_keys(random.randrange(1,36))
             time.sleep(1)
-        """floor"""
+        #floor
         with allure.step("Input floor number"):
             self.find_element(locators_add_basket.btn_floor_number).send_keys(random.randrange(1,9))
             time.sleep(1)
-        """entrance"""
+        #entrance
         with allure.step("Input entrance number"):
             self.find_element(locators_add_basket.btn_entrance_number).send_keys(random.randrange(1,3))
             time.sleep(1)
-        """entrance code"""
+        #entrance code
         with allure.step("Input entrance code"):
             self.find_element(locators_add_basket.btn_entrance_code).send_keys(random.randrange(1000,9999))
             time.sleep(1)
-        """phone"""
+        #phone
         with allure.step("Click on code button"):
             self.find_element(locators_add_basket.btn_basket_code_of_phone).click()
             time.sleep(1)
@@ -93,15 +96,15 @@ class Basket(BasePage):
         with allure.step("Input phone"):
             self.find_element(locators_add_basket.btn_basket_phone).send_keys(fake.phone_number())
             time.sleep(1)
-        """email"""
+        #email
         with allure.step("Input email"):
             self.find_element(locators_add_basket.btn_basket_email).send_keys(fake.email())
             time.sleep(1)
-        """comment"""
+        #comment
         with allure.step("Input comment"):
             self.find_element(locators_add_basket.btn_basket_comment).send_keys(fake.text())
             time.sleep(1)
-        """payment"""
+        #payment
         with allure.step("Open pyment"):
             self.find_element(locators_add_basket.btn_basket_field_payment).click()
             time.sleep(1)

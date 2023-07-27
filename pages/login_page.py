@@ -1,14 +1,14 @@
 """Functions for Log In page"""
+
 import time
 import allure
-from selenium.common import NoSuchElementException
-from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
 from pages.locators import locators_base_page
 from pages.locators import locators_log_in
 
 
 class Login(BasePage):
+    """Methods for login in site"""
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
@@ -37,15 +37,15 @@ class Login(BasePage):
             time.sleep(1)
 
     def fill_login_inputs_valid_data_and_submit(self):
-        """Email"""
+        #Email
         with allure.step("Fill in the email field"):
             self.find_element(locators_log_in.btn_login_email).send_keys("test.xoy@gmail.com")
             time.sleep(1)
-        """Password"""
+        #Password
         with allure.step("Fill in the password field"):
             self.find_element(locators_log_in.btn_login_password).send_keys("@123qwe@")
             time.sleep(1)
-        """Log in"""
+        #Log in
         with allure.step("Click button Log in"):
             self.find_element(locators_log_in.btn_aut_log_in).click()
             time.sleep(1)

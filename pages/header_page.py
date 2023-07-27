@@ -1,4 +1,5 @@
 """Functions for Header page"""
+
 import time
 import allure
 
@@ -8,9 +9,11 @@ from pages.locators import locators_header
 
 
 class Header(BasePage):
+    """Methods for checking buttons of header and opening pages"""
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
+        driver.implicitly_wait(10)
 
     def open_site(self):
         with allure.step("Go to general page"):
@@ -77,6 +80,7 @@ class Header(BasePage):
         for name, present in zip(buttons_in_block_information, check_display_block_information):
             with allure.step("Click on element in block information"):
                 self.find_element(name).click()
+                time.sleep(1)
             with allure.step("Assert what page is displayed"):
                 assert self.find_element(present).is_displayed(), f"Page {present} is not displayed"
                 time.sleep(1)

@@ -1,13 +1,16 @@
 """This is locators for Base page"""
+
 from selenium.webdriver.common.by import By
 
-"""button logo dominos"""
+#button logo dominos
 btn_logo = (By.XPATH, '//div[@class="logo-dominos"]')
 
-"""button close banner"""
+#button close banner
 btn_close_banner = (By.XPATH, '//button[@data-test-type="close"]')
 
-"""language buttons"""
-btn_language = (By.XPATH, '//div[@data-test-name="language"]')
-btn_english = (By.XPATH, '//li[@value="en"]')
-btn_russian = (By.XPATH, '//li[@value="ru"]')
+#language buttons
+btn_language = (By.XPATH, '//div[@data-test-name="language"]') #select language
+
+btn_english = (By.XPATH, '//li[@value="en"]') #english language
+
+btn_russian = (By.XPATH, '//li[@value="ru"]') #russian language

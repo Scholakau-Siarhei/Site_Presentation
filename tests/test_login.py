@@ -1,4 +1,5 @@
 """Checking of authorization"""
+
 import pytest
 import allure
 from pages.login_page import Login

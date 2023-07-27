@@ -1,22 +1,11 @@
 """This is locators for API page"""
 
-"""For Pizza"""
+#For Pizza
 URL_PIZZA = "https://dominos.by/api/web/pages?path=%2Fpizza&language=en&cityId=2"
 headers_pizza = {
   'Accept': 'application/json, text/plain, */*',
   'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,pl;q=0.6',
   'Connection': 'keep-alive',
-  'Cookie': '_gcl_au=1.1.1747184498.1687546128; _ym_uid=1687546129860396183; _ym_d=1687546129; '
-            '_tt_enable_cookie=1; _ttp=s9WBmjncqfvwcbtOf3VMseX5KrU; _fbp=fb.1.1687796267759.'
-            '481841012; _gcl_aw=GCL.1687953717.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-'
-            'wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC_qSG0aAuYxEALw_wcB; _gac_UA-71584615-1='
-            '1.1687953725.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-wp8tV8ZWrzSX2v0yNKlVILIw15QhVW'
-            'YNWyUC_qSG0aAuYxEALw_wcB; cityId=2; popup-banner-shown=true; _gid=GA1.2.579693227.'
-            '1689159727; csrftoken=REIxLYamkfEBVOHHAa0JRMhjRGF2i3ru; sessionid=q38ympxtmkqegil0g'
-            'f3o7g29y1ysawpz; language=en; _ym_isad=1; _ym_visorc=w; _ga=GA1.2.1512419877.'
-            '1687546129; _ga_FTX05WYR3P=GS1.2.1689609717.7.1.1689612429.12.0.0; _ga_BZNP2GVXYY='
-            'GS1.1.1689609717.66.1.1689612429.0.0.0; csrftoken=7aifepPCyID8G84RjxJxTZ6C1hrM35s9; '
-            'sessionid=853wacmcn55wckztb1x85olubx0griar',
   'If-None-Match': 'W/"a7e73-oE2tUzvA0PN3JUaxQzNlf/BmN3M"',
   'Referer': 'https://dominos.by/pizza',
   'Sec-Fetch-Dest': 'empty',
@@ -36,23 +25,12 @@ headers_pizza = {
   'tracestate': '3499570@nr=0-1-3499570-400695152-253f49fff829af9d----1689612504069'
 }
 
-"""For Lunch"""
+#For Lunch
 URL_LUNCH = "https://dominos.by/api/web/pages?path=%2Flunch&language=en&cityId=2"
 headers_lunch = {
   'authority': 'dominos.by',
   'accept': 'application/json, text/plain, */*',
   'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,pl;q=0.6',
-  'cookie': '_gcl_au=1.1.1747184498.1687546128; _ym_uid=1687546129860396183; _ym_d=1687546129; '
-            '_tt_enable_cookie=1; _ttp=s9WBmjncqfvwcbtOf3VMseX5KrU; _fbp=fb.1.1687796267759.'
-            '481841012; _gcl_aw=GCL.1687953717.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-wp8tV8ZWrzS'
-            'X2v0yNKlVILIw15QhVWYNWyUC_qSG0aAuYxEALw_wcB; _gac_UA-71584615-1=1.1687953725.Cj0KCQjw'
-            'tO-kBhDIARIsAL6Loret1VZCEZZj3-wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC_qSG0aAuYxEALw_wcB;'
-            ' cityId=2; popup-banner-shown=true; _gid=GA1.2.579693227.1689159727; csrftoken=REIxLYa'
-            'mkfEBVOHHAa0JRMhjRGF2i3ru; sessionid=q38ympxtmkqegil0gf3o7g29y1ysawpz; language=en; '
-            '_ym_isad=1; _ga=GA1.2.1512419877.1687546129; _gat_UA-71584615-1=1; _ym_visorc=w; '
-            '_ga_FTX05WYR3P=GS1.2.1689666147.8.1.1689666151.56.0.0; _ga_BZNP2GVXYY=GS1.1.'
-            '1689666147.68.0.1689666151.0.0.0; csrftoken=7aifepPCyID8G84RjxJxTZ6C1hrM35s9; '
-            'sessionid=853wacmcn55wckztb1x85olubx0griar',
   'correlation-id': '4b057c52-2359-4d9e-a813-a892ebcd956d',
   'if-none-match': 'W/"f5f-UWHqse0Croj1gOg+a43nYWAAO0M"',
   'newrelic': 'eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjM0OTk1NzAiLCJhcCI6IjQwMDY5NTE1Mi'
@@ -72,24 +50,12 @@ headers_lunch = {
   'x-newrelic-id': 'VwIOWFNUCBAEVFFUAQIDVFA='
 }
 
-"""For Chicken"""
+#For Chicken
 URL_CHICKEN = "https://dominos.by/api/web/pages?path=%2Fwings&language=en&cityId=2"
 headers_chicken = {
   'Accept': 'application/json, text/plain, */*',
   'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,pl;q=0.6',
   'Connection': 'keep-alive',
-  'Cookie': '_gcl_au=1.1.1747184498.1687546128; _ym_uid=1687546129860396183; _ym_d=1687546129;'
-            ' _tt_enable_cookie=1; _ttp=s9WBmjncqfvwcbtOf3VMseX5KrU; _fbp=fb.1.1687796267759.'
-            '481841012; _gcl_aw=GCL.1687953717.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-'
-            'wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC_qSG0aAuYxEALw_wcB; _gac_UA-71584615-1=1.'
-            '1687953725.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC'
-            '_qSG0aAuYxEALw_wcB; cityId=2; popup-banner-shown=true; _gid=GA1.2.579693227.'
-            '1689159727; csrftoken=REIxLYamkfEBVOHHAa0JRMhjRGF2i3ru; '
-            'sessionid=q38ympxtmkqegil0gf3o7g29y1ysawpz; language=en; _ym_isad=1; '
-            '_ga=GA1.2.1512419877.1687546129; _ym_visorc=w; _gat_UA-71584615-1=1; '
-            '_ga_FTX05WYR3P=GS1.2.1689666147.8.1.1689666297.20.0.0; _ga_BZNP2GVXYY=GS1.1.1689666147'
-            '.68.1.1689666297.0.0.0; csrftoken=7aifepPCyID8G84RjxJxTZ6C1hrM35s9; '
-            'sessionid=853wacmcn55wckztb1x85olubx0griar',
   'If-None-Match': 'W/"1c2f-cNeMuvhv5YuVP9CmCRNzmPVnxWk"',
   'Referer': 'https://dominos.by/wings',
   'Sec-Fetch-Dest': 'empty',
@@ -109,23 +75,12 @@ headers_chicken = {
   'tracestate': '3499570@nr=0-1-3499570-400695152-464f1e98ffd68d5e----1689666300325'
 }
 
-"""For Potato"""
+#For Potato
 URL_POTATO = "https://dominos.by/api/web/pages?path=%2Fpotato&language=en&cityId=2"
 headers_potato = {
   'Accept': 'application/json, text/plain, */*',
   'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,pl;q=0.6',
   'Connection': 'keep-alive',
-  'Cookie': '_gcl_au=1.1.1747184498.1687546128; _ym_uid=1687546129860396183; _ym_d=1687546129; '
-            '_tt_enable_cookie=1; _ttp=s9WBmjncqfvwcbtOf3VMseX5KrU; _fbp=fb.1.1687796267759.'
-            '481841012; _gcl_aw=GCL.1687953717.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-'
-            'wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC_qSG0aAuYxEALw_wcB; _gac_UA-71584615-1=1.'
-            '1687953725.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC'
-            '_qSG0aAuYxEALw_wcB; cityId=2; popup-banner-shown=true; _gid=GA1.2.579693227.'
-            '1689159727; csrftoken=REIxLYamkfEBVOHHAa0JRMhjRGF2i3ru; sessionid='
-            'q38ympxtmkqegil0gf3o7g29y1ysawpz; language=en; _ym_isad=1; _ga=GA1.2.1512419877.'
-            '1687546129; _ym_visorc=w; _ga_FTX05WYR3P=GS1.2.1689666147.8.1.1689666301.16.0.0; '
-            '_ga_BZNP2GVXYY=GS1.1.1689666147.68.1.1689666301.0.0.0; csrftoken='
-            '7aifepPCyID8G84RjxJxTZ6C1hrM35s9; sessionid=853wacmcn55wckztb1x85olubx0griar',
   'If-None-Match': 'W/"15b3-kmfql/xLdUd6OQoMY3pm4BwWe9U"',
   'Referer': 'https://dominos.by/potato',
   'Sec-Fetch-Dest': 'empty',
@@ -145,23 +100,12 @@ headers_potato = {
   'tracestate': '3499570@nr=0-1-3499570-400695152-7f16303e0841ade5----1689666439281'
 }
 
-"""For Bread"""
+#For Bread
 URL_BREAD = "https://dominos.by/api/web/pages?path=%2Fbread&language=en&cityId=2"
 headers_bread = {
   'Accept': 'application/json, text/plain, */*',
   'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,pl;q=0.6',
   'Connection': 'keep-alive',
-  'Cookie': '_gcl_au=1.1.1747184498.1687546128; _ym_uid=1687546129860396183; _ym_d=1687546129; '
-            '_tt_enable_cookie=1; _ttp=s9WBmjncqfvwcbtOf3VMseX5KrU; _fbp=fb.1.1687796267759.'
-            '481841012; _gcl_aw=GCL.1687953717.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-'
-            'wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC_qSG0aAuYxEALw_wcB; _gac_UA-71584615-1=1.'
-            '1687953725.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-wp8tV8ZWrzSX2v0yNKlVILIw15QhVWY'
-            'NWyUC_qSG0aAuYxEALw_wcB; cityId=2; popup-banner-shown=true; _gid=GA1.2.579693227.'
-            '1689159727; csrftoken=REIxLYamkfEBVOHHAa0JRMhjRGF2i3ru; sessionid=q38ympxtmkqegil'
-            '0gf3o7g29y1ysawpz; language=en; _ym_isad=1; _ga=GA1.2.1512419877.1687546129; '
-            '_ym_visorc=w; _gat_UA-71584615-1=1; _ga_FTX05WYR3P=GS1.2.1689666147.8.1.'
-            '1689666440.60.0.0; _ga_BZNP2GVXYY=GS1.1.1689666147.68.1.1689666440.0.0.0; csrftoken'
-            '=7aifepPCyID8G84RjxJxTZ6C1hrM35s9; sessionid=853wacmcn55wckztb1x85olubx0griar',
   'If-None-Match': 'W/"59ff-rVwaQe6BdZUjY3Ggj86PnS79Ue8"',
   'Referer': 'https://dominos.by/bread',
   'Sec-Fetch-Dest': 'empty',
@@ -181,23 +125,12 @@ headers_bread = {
   'tracestate': '3499570@nr=0-1-3499570-400695152-811cfb1c5c6c0ea0----1689666482186'
 }
 
-"""For Salads"""
+#For Salads
 URL_SALADS = "https://dominos.by/api/web/pages?path=%2Fgsalad&language=en&cityId=2"
 headers_salads = {
   'Accept': 'application/json, text/plain, */*',
   'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,pl;q=0.6',
   'Connection': 'keep-alive',
-  'Cookie': '_gcl_au=1.1.1747184498.1687546128; _ym_uid=1687546129860396183; _ym_d=1687546129; '
-            '_tt_enable_cookie=1; _ttp=s9WBmjncqfvwcbtOf3VMseX5KrU; _fbp=fb.1.1687796267759.'
-            '481841012; _gcl_aw=GCL.1687953717.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-'
-            'wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC_qSG0aAuYxEALw_wcB; _gac_UA-71584615-1='
-            '1.1687953725.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-wp8tV8ZWrzSX2v0yNKlVILIw15QhV'
-            'WYNWyUC_qSG0aAuYxEALw_wcB; cityId=2; popup-banner-shown=true; _gid=GA1.2.579693227.'
-            '1689159727; csrftoken=REIxLYamkfEBVOHHAa0JRMhjRGF2i3ru; sessionid=q38ympxtmkqegil0'
-            'gf3o7g29y1ysawpz; language=en; _ym_isad=1; _ga=GA1.2.1512419877.1687546129; _ym_v'
-            'isorc=w; _ga_FTX05WYR3P=GS1.2.1689666147.8.1.1689666483.17.0.0; _ga_BZNP2GVXYY=GS1'
-            '.1.1689666147.68.1.1689666483.0.0.0; csrftoken=7aifepPCyID8G84RjxJxTZ6C1hrM35s9; '
-            'sessionid=853wacmcn55wckztb1x85olubx0griar',
   'If-None-Match': 'W/"307a-nx9QFIQmvPu/jRMDPx+h4Wnim4Q"',
   'Referer': 'https://dominos.by/gsalad',
   'Sec-Fetch-Dest': 'empty',
@@ -217,23 +150,12 @@ headers_salads = {
   'tracestate': '3499570@nr=0-1-3499570-400695152-e0eb178ab297a3dd----1689666523622'
 }
 
-"""For Desserts"""
+#For Desserts
 URL_DESSERTS = "https://dominos.by/api/web/pages?path=%2Fstarter&language=en&cityId=2"
 headers_desserts = {
   'Accept': 'application/json, text/plain, */*',
   'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,pl;q=0.6',
   'Connection': 'keep-alive',
-  'Cookie': '_gcl_au=1.1.1747184498.1687546128; _ym_uid=1687546129860396183; _ym_d=1687546129; '
-            '_tt_enable_cookie=1; _ttp=s9WBmjncqfvwcbtOf3VMseX5KrU; _fbp=fb.1.1687796267759.'
-            '481841012; _gcl_aw=GCL.1687953717.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-'
-            'wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC_qSG0aAuYxEALw_wcB; _gac_UA-71584615-1='
-            '1.1687953725.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-wp8tV8ZWrzSX2v0yNKlVILIw15QhV'
-            'WYNWyUC_qSG0aAuYxEALw_wcB; cityId=2; popup-banner-shown=true; _gid=GA1.2.579693227'
-            '.1689159727; csrftoken=REIxLYamkfEBVOHHAa0JRMhjRGF2i3ru; sessionid='
-            'q38ympxtmkqegil0gf3o7g29y1ysawpz; language=en; _ym_isad=1; _ga=GA1.2.1512419877.'
-            '1687546129; _ym_visorc=w; _gat_UA-71584615-1=1; _ga_FTX05WYR3P=GS1.2.1689666147.8.'
-            '1.1689666524.60.0.0; _ga_BZNP2GVXYY=GS1.1.1689666147.68.1.1689666524.0.0.0; csrftoken'
-            '=7aifepPCyID8G84RjxJxTZ6C1hrM35s9; sessionid=853wacmcn55wckztb1x85olubx0griar',
   'If-None-Match': 'W/"5613-uBN+fHf7AZulbNESjxya9wvejq4"',
   'Referer': 'https://dominos.by/starter',
   'Sec-Fetch-Dest': 'empty',
@@ -253,23 +175,12 @@ headers_desserts = {
   'tracestate': '3499570@nr=0-1-3499570-400695152-e91516642da3cbfc----1689666576744'
 }
 
-"""Select Drinks"""
+#Select Drinks
 URL_DRINKS = "https://dominos.by/api/web/pages?path=%2Fdrinks&language=en&cityId=2"
 headers_drinks = {
   'Accept': 'application/json, text/plain, */*',
   'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,pl;q=0.6',
   'Connection': 'keep-alive',
-  'Cookie': '_gcl_au=1.1.1747184498.1687546128; _ym_uid=1687546129860396183; _ym_d=1687546129;'
-            ' _tt_enable_cookie=1; _ttp=s9WBmjncqfvwcbtOf3VMseX5KrU; _fbp=fb.1.1687796267759.'
-            '481841012; _gcl_aw=GCL.1687953717.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-'
-            'wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC_qSG0aAuYxEALw_wcB; _gac_UA-71584615-1='
-            '1.1687953725.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-wp8tV8ZWrzSX2v0yNKlVILIw15Q'
-            'hVWYNWyUC_qSG0aAuYxEALw_wcB; cityId=2; popup-banner-shown=true; _gid=GA1.2.579693227.'
-            '1689159727; csrftoken=REIxLYamkfEBVOHHAa0JRMhjRGF2i3ru; sessionid=q38ympxtmkqegil0'
-            'gf3o7g29y1ysawpz; language=en; _ym_isad=1; _ga=GA1.2.1512419877.1687546129; '
-            '_ym_visorc=w; _ga_FTX05WYR3P=GS1.2.1689666147.8.1.1689666577.7.0.0; _ga_BZNP2GVXYY'
-            '=GS1.1.1689666147.68.1.1689666577.0.0.0; csrftoken=7aifepPCyID8G84RjxJxTZ6C1hrM35s9;'
-            ' sessionid=853wacmcn55wckztb1x85olubx0griar',
   'If-None-Match': 'W/"a099-NVXsxvyPV071gFitxBezI0gso20"',
   'Referer': 'https://dominos.by/drinks',
   'Sec-Fetch-Dest': 'empty',
@@ -289,23 +200,12 @@ headers_drinks = {
   'tracestate': '3499570@nr=0-1-3499570-400695152-706ae7dd0cb78446----1689666691615'
 }
 
-"""For Sauce"""
+#For Sauce
 URL_SAUCE = "https://dominos.by/api/web/pages?path=%2Fsauce&language=en&cityId=2"
 headers_sauce = {
   'Accept': 'application/json, text/plain, */*',
   'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,pl;q=0.6',
   'Connection': 'keep-alive',
-  'Cookie': '_gcl_au=1.1.1747184498.1687546128; _ym_uid=1687546129860396183; _ym_d=1687546129;'
-            ' _tt_enable_cookie=1; _ttp=s9WBmjncqfvwcbtOf3VMseX5KrU; _fbp=fb.1.1687796267759.'
-            '481841012; _gcl_aw=GCL.1687953717.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-'
-            'wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC_qSG0aAuYxEALw_wcB; _gac_UA-71584615-1='
-            '1.1687953725.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-wp8tV8ZWrzSX2v0yNKlVILIw15'
-            'QhVWYNWyUC_qSG0aAuYxEALw_wcB; cityId=2; popup-banner-shown=true; _gid=GA1.2.'
-            '579693227.1689159727; csrftoken=REIxLYamkfEBVOHHAa0JRMhjRGF2i3ru; sessionid='
-            'q38ympxtmkqegil0gf3o7g29y1ysawpz; language=en; _ym_isad=1; _ga=GA1.2.1512419877.'
-            '1687546129; _ym_visorc=w; _ga_FTX05WYR3P=GS1.2.1689666147.8.1.1689666692.60.0.0; '
-            '_ga_BZNP2GVXYY=GS1.1.1689666147.68.1.1689666692.0.0.0; csrftoken=7aifepPCyID8G84R'
-            'jxJxTZ6C1hrM35s9; sessionid=853wacmcn55wckztb1x85olubx0griar',
   'If-None-Match': 'W/"3363-R/Zk7wFTh4sEaHcEe4R2C5kWY+U"',
   'Referer': 'https://dominos.by/sauce',
   'Sec-Fetch-Dest': 'empty',
@@ -325,23 +225,12 @@ headers_sauce = {
   'tracestate': '3499570@nr=0-1-3499570-400695152-456951c1ee3e508a----1689666818521'
 }
 
-"""For Discount"""
+#For Discount
 URL_DISCOUNT = "https://dominos.by/api/web/pages?path=%2Fdiscount_campaign&language=en&cityId=2"
 headers_discount = {
   'Accept': 'application/json, text/plain, */*',
   'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,pl;q=0.6',
   'Connection': 'keep-alive',
-  'Cookie': '_gcl_au=1.1.1747184498.1687546128; _ym_uid=1687546129860396183; _ym_d=1687546129; '
-            '_tt_enable_cookie=1; _ttp=s9WBmjncqfvwcbtOf3VMseX5KrU; _fbp=fb.1.1687796267759.'
-            '481841012; _gcl_aw=GCL.1687953717.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-'
-            'wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC_qSG0aAuYxEALw_wcB; _gac_UA-71584615-1='
-            '1.1687953725.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-wp8tV8ZWrzSX2v0yNKlVILIw15QhVW'
-            'YNWyUC_qSG0aAuYxEALw_wcB; cityId=2; popup-banner-shown=true; _gid=GA1.2.579693227.'
-            '1689159727; csrftoken=REIxLYamkfEBVOHHAa0JRMhjRGF2i3ru; sessionid=q38ympxtmkqegil'
-            '0gf3o7g29y1ysawpz; language=en; _ym_isad=1; _ga=GA1.2.1512419877.1687546129; '
-            '_ym_visorc=w; _gat_UA-71584615-1=1; _ga_FTX05WYR3P=GS1.2.1689666147.8.1.'
-            '1689666819.60.0.0; _ga_BZNP2GVXYY=GS1.1.1689666147.68.1.1689666819.0.0.0; csrftoken='
-            '7aifepPCyID8G84RjxJxTZ6C1hrM35s9; sessionid=853wacmcn55wckztb1x85olubx0griar',
   'Referer': 'https://dominos.by/discount_campaign',
   'Sec-Fetch-Dest': 'empty',
   'Sec-Fetch-Mode': 'cors',
@@ -360,23 +249,12 @@ headers_discount = {
   'tracestate': '3499570@nr=0-1-3499570-400695152-35f2c0ab8e0d8173----1689666861627'
 }
 
-"""For News"""
+#For News
 URL_NEWS = "https://dominos.by/api/web/pages?path=%2Fnews&language=en&cityId=2"
 headers_news = {
   'Accept': 'application/json, text/plain, */*',
   'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,pl;q=0.6',
   'Connection': 'keep-alive',
-  'Cookie': '_gcl_au=1.1.1747184498.1687546128; _ym_uid=1687546129860396183; _ym_d=1687546129; '
-            '_tt_enable_cookie=1; _ttp=s9WBmjncqfvwcbtOf3VMseX5KrU; _fbp=fb.1.1687796267759.'
-            '481841012; _gcl_aw=GCL.1687953717.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-'
-            'wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC_qSG0aAuYxEALw_wcB; _gac_UA-71584615-1=1.'
-            '1687953725.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-wp8tV8ZWrzSX2v0yNKlVILIw15QhVWY'
-            'NWyUC_qSG0aAuYxEALw_wcB; cityId=2; popup-banner-shown=true; _gid=GA1.2.579693227.'
-            '1689159727; csrftoken=REIxLYamkfEBVOHHAa0JRMhjRGF2i3ru; sessionid=q38ympxtmkqegil'
-            '0gf3o7g29y1ysawpz; language=en; _ym_isad=1; _ga=GA1.2.1512419877.1687546129; '
-            '_ym_visorc=w; _ga_FTX05WYR3P=GS1.2.1689666147.8.1.1689666862.17.0.0; _ga_BZNP2GVXYY='
-            'GS1.1.1689666147.68.1.1689666862.0.0.0; csrftoken=7aifepPCyID8G84RjxJxTZ6C1hrM35s9; '
-            'sessionid=853wacmcn55wckztb1x85olubx0griar',
   'Referer': 'https://dominos.by/news',
   'Sec-Fetch-Dest': 'empty',
   'Sec-Fetch-Mode': 'cors',
@@ -395,23 +273,12 @@ headers_news = {
   'tracestate': '3499570@nr=0-1-3499570-400695152-5bb510c50f665635----1689667010517'
 }
 
-"""For Job"""
+#For Job
 URL_JOB = "https://dominos.by/api/web/pages?path=%2Fjob&language=en&cityId=2"
 headers_job = {
   'Accept': 'application/json, text/plain, */*',
   'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,pl;q=0.6',
   'Connection': 'keep-alive',
-  'Cookie': '_gcl_au=1.1.1747184498.1687546128; _ym_uid=1687546129860396183; _ym_d=1687546129; '
-            '_tt_enable_cookie=1; _ttp=s9WBmjncqfvwcbtOf3VMseX5KrU; _fbp=fb.1.1687796267759.'
-            '481841012; _gcl_aw=GCL.1687953717.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-'
-            'wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC_qSG0aAuYxEALw_wcB; _gac_UA-71584615-1=1.'
-            '1687953725.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-wp8tV8ZWrzSX2v0yNKlVILIw15QhVWY'
-            'NWyUC_qSG0aAuYxEALw_wcB; cityId=2; popup-banner-shown=true; _gid=GA1.2.579693227.'
-            '1689159727; csrftoken=REIxLYamkfEBVOHHAa0JRMhjRGF2i3ru; sessionid=q38ympxtmkqegil'
-            '0gf3o7g29y1ysawpz; language=en; _ym_isad=1; _ga=GA1.2.1512419877.1687546129; '
-            '_ym_visorc=w; _ga_FTX05WYR3P=GS1.2.1689666147.8.1.1689667011.60.0.0; _ga_BZNP2GVXYY='
-            'GS1.1.1689666147.68.1.1689667011.0.0.0; csrftoken=7aifepPCyID8G84RjxJxTZ6C1hrM35s9; '
-            'sessionid=853wacmcn55wckztb1x85olubx0griar',
   'Referer': 'https://dominos.by/job',
   'Sec-Fetch-Dest': 'empty',
   'Sec-Fetch-Mode': 'cors',
@@ -430,24 +297,13 @@ headers_job = {
   'tracestate': '3499570@nr=0-1-3499570-400695152-18f99de2b21a34f5----1689667096660'
 }
 
-"""For Loyalty program"""
+#For Loyalty program
 URL_LOYALTY = "https://dominos.by/api/web/pages?path=%2Floyalty-program&language=en&cityId=2"
 payload = {}
 headers_loyalty = {
   'Accept': 'application/json, text/plain, */*',
   'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,pl;q=0.6',
   'Connection': 'keep-alive',
-  'Cookie': '_gcl_au=1.1.1747184498.1687546128; _ym_uid=1687546129860396183; _ym_d=1687546129; '
-            '_tt_enable_cookie=1; _ttp=s9WBmjncqfvwcbtOf3VMseX5KrU; _fbp=fb.1.1687796267759.'
-            '481841012; _gcl_aw=GCL.1687953717.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-'
-            'wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC_qSG0aAuYxEALw_wcB; _gac_UA-71584615-1=1.'
-            '1687953725.Cj0KCQjwtO-kBhDIARIsAL6Loret1VZCEZZj3-wp8tV8ZWrzSX2v0yNKlVILIw15QhVWYNWyUC'
-            '_qSG0aAuYxEALw_wcB; cityId=2; popup-banner-shown=true; _gid=GA1.2.579693227.'
-            '1689159727; csrftoken=REIxLYamkfEBVOHHAa0JRMhjRGF2i3ru; sessionid=q38ympxtmkqegil0gf3'
-            'o7g29y1ysawpz; language=en; _ym_isad=1; _ga=GA1.2.1512419877.1687546129; '
-            '_ym_visorc=w; _gat_UA-71584615-1=1; _ga_FTX05WYR3P=GS1.2.1689666147.8.1.1689667145.'
-            '12.0.0; _ga_BZNP2GVXYY=GS1.1.1689666147.68.1.1689667145.0.0.0; csrftoken=7aifepPCyID8'
-            'G84RjxJxTZ6C1hrM35s9; sessionid=853wacmcn55wckztb1x85olubx0griar',
   'Referer': 'https://dominos.by/loyalty-program',
   'Sec-Fetch-Dest': 'empty',
   'Sec-Fetch-Mode': 'cors',

@@ -1,4 +1,5 @@
 """Checking of registration"""
+
 import pytest
 import allure
 from pages.sing_up_page import SingUp

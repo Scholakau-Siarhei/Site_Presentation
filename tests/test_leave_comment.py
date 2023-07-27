@@ -1,4 +1,5 @@
 """Checking what user can leave comment"""
+
 import pytest
 import allure
 from pages.leave_comment_page import LeaveComment

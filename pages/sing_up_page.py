@@ -1,4 +1,5 @@
 """Functions for Sing Up page"""
+
 import time
 import allure
 from faker import Faker
@@ -7,6 +8,7 @@ from pages.locators import locators_base_page, locators_log_in, locators_sing_up
 
 
 class SingUp(BasePage):
+    """Methods for registration"""
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
@@ -42,7 +44,7 @@ class SingUp(BasePage):
 
     def input_registration_data(self):
         fake = Faker("ru_RU")
-        """Phone number"""
+        #Phone number
         with allure.step("Click on icon flag"):
             self.find_element(locators_sing_up.btn_singup_code_of_phone).click()
         with allure.step("Change code Ukraine"):
@@ -50,11 +52,11 @@ class SingUp(BasePage):
         with allure.step("Input phone number"):
             self.find_element(locators_sing_up.btn_singup_phone).send_keys(fake.phone_number())
             time.sleep(2)
-        """Email"""
+        #Email
         with allure.step("Input fake email"):
             self.find_element(locators_sing_up.btn_singup_email).send_keys(fake.email())
             time.sleep(2)
-        """Password"""
+        #Password
         with allure.step("Input fake password"):
             self.find_element(locators_sing_up.btn_singup_password).send_keys(fake.password())
             time.sleep(2)

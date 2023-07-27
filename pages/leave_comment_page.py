@@ -1,4 +1,5 @@
 """Functions for Leave Comment page"""
+
 import time
 import allure
 from faker import Faker
@@ -7,6 +8,7 @@ from pages.locators import locators_base_page
 from pages.locators import locators_leave_comment
 
 class LeaveComment(BasePage):
+    """Methods for checking leave comment"""
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
@@ -38,39 +40,39 @@ class LeaveComment(BasePage):
     def input_fake_data_in_form_leave_comment(self):
         fake = Faker("ru_RU")
 
-        """Name"""
+        #Name
         with allure.step("Input fake name"):
             self.find_element(locators_leave_comment.btn_comment_field_name).send_keys(fake.first_name())
             time.sleep(1)
-        """Email"""
+        #Email
         with allure.step("Input fake email"):
             self.find_element(locators_leave_comment.btn_comment_field_email).send_keys(fake.email())
             time.sleep(1)
-        """Comment"""
+        #Comment
         with allure.step("Add comment"):
             self.find_element(locators_leave_comment.btn_input_field_comment).send_keys(fake.text())
             time.sleep(1)
-        """Phone"""
+        #Phone
         with allure.step("Click on icon flag"):
             self.find_element(locators_leave_comment.btn_comment_code_of_phone).click()
         with allure.step("Change code Ukraine"):
             self.find_element(locators_leave_comment.btn_comment_code_of_phone_ukraine).click()
         with allure.step("Input phone number"):
             self.find_element(locators_leave_comment.btn_comment_field_phone).send_keys(fake.phone_number())
-        """Category"""
+        #Category
         with allure.step("Click on button 'Category feedback'"):
             self.find_element(locators_leave_comment.btn_change_category_feedback).click()
         with allure.step("Change category feedback 'Site'"):
             self.find_element(locators_leave_comment.btn_change_category_feedback_site).click()
             time.sleep(1)
-        """Photo"""
+        #Photo
         with allure.step("Add photo"):
             self.find_element(locators_leave_comment.btn_add_photo).send_keys(locators_leave_comment.photo)
             time.sleep(1)
         with allure.step("Checking adding photo"):
             load = self.find_element(locators_leave_comment.adding_photo).text
             assert load != "", "Файл не был загружен"
-        """Send comment"""
+        #Send comment
         with allure.step("Send comment"):
             self.find_element(locators_leave_comment.btn_send).click()
             time.sleep(1)
