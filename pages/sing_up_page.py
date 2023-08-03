@@ -10,14 +10,17 @@ from pages.locators import locators_base_page, locators_log_in, locators_sing_up
 class SingUp(BasePage):
     """Methods for registration"""
     def __init__(self, driver):
+        """WebDriver Initialization"""
         super().__init__(driver)
         self.driver = driver
 
     def open_site(self):
+        """Open site"""
         with allure.step("Go to general page"):
             self.driver.get('https://dominos.by/')
 
     def close_banner(self):
+        """Closes advertising banner"""
         with allure.step("Close banner"):
             if self.find_element(locators_base_page.btn_close_banner):
                 self.find_element(locators_base_page.btn_close_banner).click()
@@ -26,6 +29,7 @@ class SingUp(BasePage):
             time.sleep(1)
 
     def change_language(self):
+        """Changes language from Russian to English"""
         with allure.step("Clik on language icon"):
             self.find_element(locators_base_page.btn_language).click()
         with allure.step("Change language on english"):
@@ -33,16 +37,19 @@ class SingUp(BasePage):
             time.sleep(1)
 
     def click_login_btn(self):
+        """Open login page"""
         with allure.step("Click button Log in"):
             self.find_element(locators_log_in.btn_log_in).click()
             time.sleep(1)
 
     def click_singup_btn(self):
+        """Open sing up form"""
         with allure.step("Click button Sing up"):
             self.find_element(locators_sing_up.btn_sing_up).click()
             time.sleep(1)
 
     def input_registration_data(self):
+        """Input valid data in registration form"""
         fake = Faker("ru_RU")
         #Phone number
         with allure.step("Click on icon flag"):
@@ -62,11 +69,13 @@ class SingUp(BasePage):
             time.sleep(2)
 
     def click_reg_sing_up_btn(self):
+        """Press the register button"""
         with allure.step("Click button Sing up"):
             self.find_element(locators_sing_up.btn_reg_sing_up).click()
             time.sleep(1)
 
     def registration_is_assert(self):
+        """Checking what user is register"""
         with allure.step("Assert of registration"):
             assert self.is_element_present(locators_sing_up.registration_complete)
             time.sleep(2)

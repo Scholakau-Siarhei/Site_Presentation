@@ -9,11 +9,12 @@ from pages.add_basket_page import Basket
 @allure.suite("Basket")
 @allure.title("Adding a product in to the basket and checking it price")
 def test_add_basket(driver):
+    """Run test for checking what user can ordering pizza"""
     add_basket_page = Basket(driver)
     add_basket_page.open_site()
     add_basket_page.close_banner()
-    add_basket_page.add_hotdog_board_for_Munich_pizza()
-    add_basket_page.add_Munich_pizza_with_hotdog_board_in_basket()
+    add_basket_page.add_hotdog_board_for_munich_pizza()
+    add_basket_page.add_munich_pizza_with_hotdog_board_in_basket()
     add_basket_page.open_basket()
     add_basket_page.open_form_order_pizza()
     add_basket_page.input_data_form_order_pizza()

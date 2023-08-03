@@ -10,9 +10,10 @@ from pages.header_page import Header
 @allure.suite("Header")
 @allure.title("Checking all elements of header")
 def test_header(driver):
+    """Run test checking what all elements of header clickable"""
     header_page = Header(driver)
     header_page.open_site()
     header_page.close_banner()
     header_page.change_language()
-    #header_page.check_block_menu()
+    header_page.check_block_menu()
     header_page.check_block_information()

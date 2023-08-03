@@ -10,6 +10,7 @@ from pages.api_page import API
 @allure.title("Checking what page is opened")
 
 def test_api():
+    """Run API tests"""
     API.select_pizza()
     API.select_lunch()
     API.select_chicken()

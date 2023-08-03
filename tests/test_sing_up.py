@@ -10,6 +10,7 @@ from pages.sing_up_page import SingUp
 @allure.suite("Registration")
 @allure.title("Registration with valid data")
 def test_sing_up(driver):
+    """Checking what user can is register"""
     sing_up_page = SingUp(driver)
     sing_up_page.open_site()
     sing_up_page.close_banner()

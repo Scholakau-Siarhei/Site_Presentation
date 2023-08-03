@@ -11,15 +11,18 @@ from pages.locators import locators_header
 class Header(BasePage):
     """Methods for checking buttons of header and opening pages"""
     def __init__(self, driver):
+        """WebDriver Initialization"""
         super().__init__(driver)
         self.driver = driver
         driver.implicitly_wait(10)
 
     def open_site(self):
+        """Open site"""
         with allure.step("Go to general page"):
             self.driver.get('https://dominos.by/')
 
     def close_banner(self):
+        """Closes advertising banner"""
         with allure.step("Close banner"):
             if self.find_element(locators_base_page.btn_close_banner):
                 self.find_element(locators_base_page.btn_close_banner).click()
@@ -28,6 +31,7 @@ class Header(BasePage):
             time.sleep(1)
 
     def change_language(self):
+        """Changes language from Russian to English"""
         with allure.step("Clik on language icon"):
             self.find_element(locators_base_page.btn_language).click()
         with allure.step("Change language on english"):
@@ -35,6 +39,7 @@ class Header(BasePage):
             time.sleep(1)
 
     def check_block_menu(self):
+        """Checking block menu"""
         buttons_in_block_menu = [
             locators_header.btn_sauce,
             locators_header.btn_drinks,
@@ -65,6 +70,7 @@ class Header(BasePage):
                 time.sleep(1)
 
     def check_block_information(self):
+        """Checking block information"""
         buttons_in_block_information = [
             locators_header.btn_discount,
             locators_header.btn_news,

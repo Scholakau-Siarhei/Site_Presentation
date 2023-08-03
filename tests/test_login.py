@@ -10,6 +10,7 @@ from pages.login_page import Login
 @allure.suite("Authorisation")
 @allure.title("Authorisation with valid data")
 def test_login(driver):
+    """Run test checking what user can login"""
     login_page = Login(driver)
     login_page.open_site()
     login_page.close_banner()

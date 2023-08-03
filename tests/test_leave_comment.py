@@ -9,6 +9,7 @@ from pages.leave_comment_page import LeaveComment
 @allure.suite("Leave Comment")
 @allure.title("Leave Comment with all valid data")
 def test_leave_comment(driver):
+    """Checking what user can leave comment"""
     leave_comment_page = LeaveComment(driver)
     leave_comment_page.open_site()
     leave_comment_page.close_banner()

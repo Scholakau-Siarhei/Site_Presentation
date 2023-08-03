@@ -1,3 +1,2 @@
 #!/bin/bash
-allure serve ./tests/reports
-remove-old ./tests/reports
+allure serve -o ./tests/reports ../tests/reports --clean

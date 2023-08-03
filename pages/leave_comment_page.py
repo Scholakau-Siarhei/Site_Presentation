@@ -10,14 +10,17 @@ from pages.locators import locators_leave_comment
 class LeaveComment(BasePage):
     """Methods for checking leave comment"""
     def __init__(self, driver):
+        """WebDriver Initialization"""
         super().__init__(driver)
         self.driver = driver
 
     def open_site(self):
+        """Open site"""
         with allure.step("Go to general page"):
             self.driver.get('https://dominos.by/')
 
     def close_banner(self):
+        """Closes advertising banner"""
         with allure.step("Close banner"):
             if self.find_element(locators_base_page.btn_close_banner).click():
                 self.find_element(locators_base_page.btn_close_banner).click()
@@ -26,6 +29,7 @@ class LeaveComment(BasePage):
             time.sleep(1)
 
     def change_language(self):
+        """Changes language from Russian to English"""
         with allure.step("Clik on language icon"):
             self.find_element(locators_base_page.btn_language).click()
         with allure.step("Change language on english"):
@@ -33,11 +37,13 @@ class LeaveComment(BasePage):
             time.sleep(1)
 
     def open_form_leave_comment(self):
+        """Open form leave comment"""
         with allure.step("Clik on Leave feedback button"):
             self.find_element(locators_leave_comment.btn_leave_feedback).click()
             time.sleep(1)
 
     def input_fake_data_in_form_leave_comment(self):
+        """Input valid data in form leave comment"""
         fake = Faker("ru_RU")
 
         #Name
@@ -78,6 +84,7 @@ class LeaveComment(BasePage):
             time.sleep(1)
 
     def assert_leave_comment(self):
+        """Checking what comment is sending"""
         with allure.step("Assert what feedback is leaved"):
             assert self.is_element_present(locators_leave_comment.successful_comment)
             time.sleep(1)

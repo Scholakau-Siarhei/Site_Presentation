@@ -1,4 +1,4 @@
-"""Functions for Basket page"""
+"""Functions for checking the addition of an item to the basket"""
 
 import random
 import time
@@ -9,46 +9,53 @@ from pages.locators import locators_base_page, locators_add_basket
 
 
 class Basket(BasePage):
-    """Methods for checking the addition of an item to the basket"""
+    """Class basket input functions for checking the addition of an item to the basket"""
     def __init__(self, driver):
+        """WebDriver Initialization"""
         super().__init__(driver)
         self.driver = driver
 
     def open_site(self):
+        """Open site"""
         with allure.step("Go to general page"):
             self.driver.get('https://dominos.by/')
 
     def close_banner(self):
-        with allure.step("Close banner"):
+        """Closes advertising banner"""
+        with allure.step("Closes banner"):
             if self.is_element_visible(locators_base_page.btn_close_banner):
                 self.find_element(locators_base_page.btn_close_banner).click()
             else:
                 pass
             time.sleep(1)
 
-    def add_hotdog_board_for_Munich_pizza(self):
-        with allure.step("Add hot-dog board for Munich pizza"):
+    def add_hotdog_board_for_munich_pizza(self):
+        """Adding hot-dog board for Munich pizza"""
+        with allure.step("Adding hot-dog board for Munich pizza"):
             self.find_element(locators_add_basket.btn_add_hotdog_board).click()
             time.sleep(1)
 
-    def add_Munich_pizza_with_hotdog_board_in_basket(self):
-        with allure.step("Add Munich pizza with hot-dog board in the basket"):
+    def add_munich_pizza_with_hotdog_board_in_basket(self):
+        """Adding Munich pizza with hot - dog board in the basket"""
+        with allure.step("Adding Munich pizza with hot-dog board in the basket"):
             self.find_element(locators_add_basket.btn_add_to_basket_munich).click()
             time.sleep(1)
 
     def open_basket(self):
-        with allure.step("Open basket"):
+        """Opening basket"""
+        with allure.step("Opening basket"):
             self.find_element(locators_add_basket.btn_basket).click()
             time.sleep(1)
 
     def open_form_order_pizza(self):
+        """Opening form-order of pizza"""
         with allure.step("Opening form-order of pizza"):
             self.find_element(locators_add_basket.btn_open_form_order_pizza).click()
             time.sleep(1)
 
     def input_data_form_order_pizza(self):
-        fake = Faker("ru_RU")
         """Input valid data in the form-order of pizza"""
+        fake = Faker("ru_RU")
         #street
         with allure.step("Input street"):
             time.sleep(2)
@@ -113,11 +120,13 @@ class Basket(BasePage):
             time.sleep(1)
 
     def confirm_order(self):
+        """Confirm order"""
         with allure.step("Confirm order"):
             self.find_element(locators_add_basket.btn_basket_submit).click()
             time.sleep(1)
 
     def assert_confirm_order(self):
+        """Checking confirm order"""
         with allure.step("Checking confirm order"):
             assert self.is_element_visible(locators_add_basket.confirm_order)
             time.sleep(1)
