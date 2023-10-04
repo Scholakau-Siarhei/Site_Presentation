@@ -1,4 +1,4 @@
-# Дипломный проект "Щёлокова Сергея" для сайта "Domino's Pizza"
+# Дипломный проект Щёлокова Сергея для сайта "Domino's Pizza"
 ## Для запуска тестов:
 
 1. Cкопируйте репозитой: https://github.com/Scholakau-Siarhei/Site_Presentation.git
